@@ -1,0 +1,88 @@
+#Целое число int
+#Вещественные числа float
+#Логический тип (true false)
+# == != > < <= => 
+				#строки(string)
+# a='привет'				
+# print(a)
+# b=input('Введите ваше имя ')
+# print(b)
+
+# m='Привет '
+# l='мир'
+
+# c='{}{}!'.format(m,l)
+# print(c)
+
+# user='python'
+# g='Привет {name}!'.format(name=user)
+
+# user1='python'
+# n=f'привет {user1}'
+#len()
+# a='привет'
+# b=len(a)
+# print(b)
+
+# g='Привет'.upper()
+# print(g)
+# n='ПРИВЕТ'.lower()
+# print(n)
+# o='дима'.capitalize()
+# print(o)
+
+# u=' Алексей   '
+# z=u.strip()
+# print(z)
+
+# w='Прив3т'.replace('3','e')
+# print(w)
+# s='Прив3т'.replace('п','e')
+# print(s)
+
+# y='Привет ОлеЖ'.lower().replace('ж','г').capitalize()
+# print(y)
+#.title()	
+
+				#Замена в строке
+# list_my='Петренко.Петр'
+# print(list_my.split('.'))
+
+# second_list='Михаил Михайлов'
+# print(second_list.split(' '))
+# b=second_list.split(' ')
+# print(len(b))
+
+
+# intro="Hello"
+# print(intro.split('l'))
+# f=intro.split('l')
+# print(len(f))
+# kl=len(f)
+# print(kl*2)
+
+#None (Специальный тип данных)
+a= None
+b= 0
+print(a is None) #True
+print(b is None) #False
+
+j = 66
+print(type(j))
+g = False
+print(type(g))
+
+h = None
+print(type(h))
+
+name=input('Введите имя ')
+print(f'привет {name}!')
+
+my_float=float(input())
+my_float=int(my_float)
+
+print(asas*3)
+print(asaas+2)#ошибка
+print(asas+'2')
+
+

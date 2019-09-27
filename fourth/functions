@@ -1,0 +1,57 @@
+import random
+# price=100
+# discount=5
+# price_with_discount=price-price*discount/100
+# print(price_with_discount)
+# def discount(price,discount):
+# 	if discount>=100:
+# 		price_with_discount=price
+# 	else:
+# 		price_with_discount=price-price*discount/100
+# 	# print(price_with_discount)
+# 	return price_with_discount		
+# # discount(175,100)	
+# dis=discount(300,25)
+# print(dis*2)
+
+# def discount(price,discount,max_discount=20):
+# a=random.randint(1,15)
+# print(a)
+#def(a,b)
+# def test(a,b):
+# 	s=a+b
+# 	print(s)
+#test(15,20)
+# def l(a,b):
+# 	s= a+b
+# 	s= s*s
+# 	print(s)
+# l(3,5)
+# def p(a):
+# 	s=a**3
+# 	print(s)
+# c=int(input())
+# p(c)
+# def discount(max_discount=20):
+# 	price=random.randint(100,1000)
+# 	print('Цена товара',price)
+# 	discount=random.randint(1,35)
+# 	if discount>max_discount:
+# 		discount=max_discount
+# 		price_with_discount=price-price*discount/100
+# 	elif discount==max_discount:
+# 		price_with_discount=price-price*discount/100
+# 	else:
+# 		price_with_discount=price-price*discount/100
+# 	print(price_with_discount)	
+# discount()
+def get_summ(one,two,delimiter='&'):
+	jopa = one +delimiter+ two 
+	return jopa
+any_peremennay = input("Ваше имя ") 
+any_peremennay1 = input('Ваша фамилия ')
+	
+piton = get_summ(any_peremennay,any_peremennay1)
+print(piton)
+list1_JopaiPiton = piton.split('&')
+print(list1_JopaiPiton)

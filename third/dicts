@@ -1,0 +1,70 @@
+Списки и словари
+list-список
+dictionaries-словари
+my_list=['Саша','Павел','Леша']
+print(my_list)
+a=len(my_list)
+print(a)
+my_list.append('Борис')#добавление элементов
+print(my_list)
+my_list.append('Саша')
+b=my_list.count('Саша')#подсчет элементов
+print(b)
+print(my_list[0:3])#срезы
+
+print(my_list.index('Павел'))#поиск элементов
+print(my_list.index('Саша'))
+
+my_list=['3','5','7','9']
+my_list.append('python')
+print(my_list)
+print(len(my_list))
+m = ['1','2','4','5','6']
+print(m[0])
+print(m[-1])
+m.remove('2')
+print(m)
+
+print(m[0:3])
+m.remove('5')
+print(m)
+
+
+				Словари ключ:значение
+my_dict={
+	'name':'Паша',
+	'years':'17',
+	'направление':'пи'
+}
+print(my_dict.get('name'))
+print(my_dict.get('years'))
+print(my_dict.get('направление'))
+
+stock=[
+{'Пушкин':'Руслан и Людмила',
+'Булгаков':'Мастер и Маргарита',
+'Ремарк':'Триумфальная арка'},
+{'Nissan':'GTR',
+'Audi':'TT',
+'Lada':'Priora'},
+{'MARVEL':'Avengers final',
+'LucasFilm':'StarWars',
+'OriginalFilm':'F&F'}]
+#print(stock)
+print(stock[2])
+print(stock[2]['MARVEL'])
+print(stock[2]['MARVEL'][0])
+dict1={'city':'Rostov-on-Don',
+'temperature':'11'}
+print(dict1['city'])
+dict1['temperature'] = int(dict1['temperature'])
+dict1['temperature'] = dict1['temperature'] - 4
+
+# print(dict1)
+
+new_list=['1','4','5']
+new_list.remove('1')
+new_list.append('1')
+print(new_list)
+
+

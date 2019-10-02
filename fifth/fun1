@@ -1,0 +1,96 @@
+# i=0
+# while i<=12:
+# 	print(i)
+# 	i+=1
+# name=''
+# while name != 'Олег':
+# 	print('Введи нормальное имя ')
+# 	name=input('')
+# 	name=name.capitalize()
+# while True:
+# 	print('Чему равно число пи')
+# 	text = input()
+# 	if text == 'Около трех':
+# 		break
+# 	elif text != 'Около трех':
+# 		continue
+#Игра в кости
+#Два игрока. У каждого есть ник и денежный счет
+#Выигрывает тот у кого больше
+#Забирает ставку
+#Игра идет до тех пор, пока один из игроков не обанкротится
+# import random
+# player_1={'счет':1000}
+# player_2={'счет':1000}
+
+# player_1['имя']=input('Имя первого игрока ')
+# player_2['имя']=input('Имя второго игрока ')
+
+# while True:
+# 	# 
+# 	player_1['ставка']=int(input('Введите ставку '))
+# 	player_2['ставка']=int(input('Введите ставку '))
+
+# 	player_1['очки']=random.randint(2,12)
+# 	player_2['очки']=random.randint(2,12)
+
+# 	print('Очки первого игрока: ',player_1['очки'], '\n Очки второго игрока: ',player_2['очки'])
+
+# 	if player_1['очки'] > player_2['очки']:
+# 		print('Первый победил')
+# 		player_1['счет'] +=player_2['ставка']
+# 		player_2['счет'] -=player_2['ставка']
+# 	elif player_2['очки'] > player_1['очки']:
+# 		print('Второй победил')
+# 		player_2['счет'] +=player_1['ставка']
+# 		player_1['счет'] -=player_1['ставка']
+# 	else:
+# 		print('ничья')
+# 	print('У первого игрока:', player_1['счет'])
+# 	print('У второго игрока:', player_2['счет'])
+
+# 	if player_1['счет']<=0:
+# 		print(player_1['имя'],' проиграл')
+# 		break
+# 	elif player_2['счет']<=0:
+# 		print(player_2['имя'],' проиграл')
+# 		break
+import random
+
+def create():
+	person={
+	'hp':100,
+	'damage':30
+	}
+	person['name']=input('Введите имя персонажа ')
+	bonus=int(input("""Выберите бонус:
+	1- прибавка к урону
+	2- прибавка к хп """))
+
+	if bonus ==1:
+		person['damage']+=5
+	else:
+		person['hp']+=30
+	return person
+def fight(attacker, defender):
+	print(attacker['name'],' наносит удар по', defender['name'])
+	defender['hp']-=attacker['damage']+random.randint(-3,3)
+def health(person):
+	print('у ',person['name'],' осталось ',person['hp'],' здоровья')
+
+player_1=create()
+player_2=create()
+while True:
+	fight(player_1,player_2)
+	fight(player_2,player_1)
+
+	health(player_1)
+	health(player_2)
+
+	if player_1['hp']<=0:
+		print(player_1['name'],' ПОТРАЧЕНО')
+		break
+	elif player_2['hp']<=0:
+		print(player_2['name'],' ПОТРАЧЕНО')	
+		break
+	input() 
